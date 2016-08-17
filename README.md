@@ -19,7 +19,7 @@ httpd -M
 
 3- Restart apache
 
-to run appache use this command:
+to run Apache use this command:
 
 sudo LD_PRELOAD=liblttng-ust-fork.so httpd
 
