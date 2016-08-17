@@ -20,18 +20,22 @@ httpd -M
 3- Restart apache
 
 to run appache use this command:
+
 sudo LD_PRELOAD=liblttng-ust-fork.so httpd
 
 
 4- Start lttng tracing:
 
 lttng create
+
 lttng enable-events -u -a
+
 lttng start
 
 wget http://localhost
 
 lttng stop
+
 lttng view
 
 That is it.!
