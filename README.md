@@ -17,7 +17,7 @@ httpd -M
 
 -M command of httpd shows all installed and active Apache modules. So you should be able to see the lttng_module in the list.
 
-3- Restart apache
+3- Restart Apache
 
 to run Apache use this command:
 
