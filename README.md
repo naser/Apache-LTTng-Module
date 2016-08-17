@@ -15,7 +15,7 @@ sudo apxs -i -a -c src/mod_lttng.c -ldl -llttng-ust
 
 httpd -M 
 
--M command of httpd shows all installed and active Apache modules. So you should be able to see the mod_lttng in the list.
+-M command of httpd shows all installed and active Apache modules. So you should be able to see the lttng_module in the list.
 
 3- Restart apache
 
