@@ -29,7 +29,7 @@ sudo LD_PRELOAD=liblttng-ust-fork.so httpd
 
 or
 
-sudo LD_PRELOAD=liblttng-ust-fork.so httpd systemctl restart apache2
+sudo LD_PRELOAD=liblttng-ust-fork.so systemctl restart apache2
 
 4- Start lttng tracing:
 
