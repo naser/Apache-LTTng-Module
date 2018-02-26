@@ -14,7 +14,9 @@ sudo apxs -i -a -c src/mod_lttng.c -ldl -llttng-ust
 2- Then make sure that mod_lttng is installed:
 
 httpd -M 
+
 or 
+
 apache2ctl -M
 
 -M command of httpd shows all installed and active Apache modules. So you should be able to see the lttng_module in the list.
@@ -24,7 +26,9 @@ apache2ctl -M
 to run Apache use this command:
 
 sudo LD_PRELOAD=liblttng-ust-fork.so httpd
+
 or
+
 sudo LD_PRELOAD=liblttng-ust-fork.so httpd systemctl restart apache2
 
 4- Start lttng tracing:
