@@ -220,7 +220,7 @@ void lttng_register_hooks(apr_pool_t *p)
 {
     ap_hook_post_read_request(apache_request_entry, NULL,NULL, APR_HOOK_FIRST);
     ap_hook_pre_connection(apache_accept_connection, NULL, NULL, APR_HOOK_MIDDLE);
-    ap_hook_pre_close_connection(apache_close_connection, NULL, NULL, APR_HOOK_MIDDLE);
+    //ap_hook_pre_close_connection(apache_close_connection, NULL, NULL, APR_HOOK_MIDDLE);
     //ap_hook_resume_connection(apache_resume_connection, NULL, NULL, APR_HOOK_MIDDLE);
     //ap_hook_suspend_connection(apache_suspend_connection, NULL, NULL, APR_HOOK_MIDDLE);
     ap_hook_log_transaction(apache_request_exit,NULL,NULL,APR_HOOK_FIRST);
