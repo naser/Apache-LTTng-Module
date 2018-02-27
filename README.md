@@ -27,13 +27,10 @@ to run Apache use this command:
 
 sudo LD_PRELOAD=liblttng-ust-fork.so httpd
 
-or
-
-sudo LD_PRELOAD=liblttng-ust-fork.so sudo systemctl restart apache2.service
-
 or 
 
-sudo LD_PRELOAD=liblttng-ust-fork.so /usr/sbin/apache2ctl restart
+sudo LD_PRELOAD=liblttng-ust-fork.so apache2ctl restart
+
 4- Start lttng tracing:
 
 lttng create
