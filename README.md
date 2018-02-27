@@ -31,6 +31,9 @@ or
 
 sudo LD_PRELOAD=liblttng-ust-fork.so systemctl restart apache2
 
+or 
+
+sudo LD_PRELOAD=liblttng-ust-fork.so /usr/sbin/apache2ctl restart
 4- Start lttng tracing:
 
 lttng create
